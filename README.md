@@ -9,7 +9,6 @@ A full stack collaborative project management application inspired by Trello. Mu
 - Session based authentication with BCrypt password hashing
 - Project invite system — owners can add collaborators by username
 - Task descriptions with inline editing
-- Responsive dark themed UI
 
 ## Tech Stack
 
