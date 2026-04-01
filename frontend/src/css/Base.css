@@ -1,0 +1,698 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #0f1b2d;
+  color: #e8eaf0;
+}
+
+/* ─── Login Page ─────────────────────────────── */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0f1b2d 0%, #1a3a5c 100%);
+}
+
+.login-card {
+  background: #162032;
+  padding: 44px 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  max-width: 400px;
+  border: 1px solid #1e3a5f;
+}
+
+.login-card h2 {
+  margin-bottom: 28px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 11px 14px;
+  margin-bottom: 14px;
+  background: #0f1b2d;
+  border: 1px solid #1e3a5f;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #e8eaf0;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.login-card input::placeholder {
+  color: #5a7a9a;
+}
+
+.login-card input:focus {
+  border-color: #4f8ef7;
+}
+
+.login-card button {
+  width: 100%;
+  padding: 11px;
+  background: linear-gradient(90deg, #1e5fa8, #4f8ef7);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  margin-top: 4px;
+}
+
+.login-card button:hover {
+  opacity: 0.9;
+}
+
+.login-error {
+  color: #fc8181;
+  font-size: 13px;
+  margin-top: 12px;
+  text-align: center;
+}
+
+/* ─── Navbar ─────────────────────────────────── */
+.navbar {
+  background-color: #112240;
+  padding: 14px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #1e3a5f;
+}
+
+/* LEFT */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navbar-brand {
+  font-size: 18px;
+  font-weight: 700;
+  color: #4f8ef7;
+  cursor: pointer;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 18px;
+}
+
+.nav-link {
+  color: #8aafd4;
+  cursor: pointer;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: #4f8ef7;
+}
+
+/* RIGHT */
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.navbar-user {
+  font-size: 14px;
+  color: #8aafd4;
+}
+
+/* LOGOUT BUTTON */
+.logout-btn {
+  padding: 6px 14px;
+  background: #1a2f4a;
+  color: #e8eaf0;
+  border: 1px solid #1e3a5f;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.logout-btn:hover {
+  background: #4f8ef7;
+  color: white;
+  border-color: #4f8ef7;
+}
+
+/* ─── Home Page ──────────────────────────────── */
+.home-wrapper {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+.logout-btn {
+  padding: 6px 14px;
+  background: #1a2f4a;
+  color: #e8eaf0;
+  border: 1px solid #1e3a5f;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.logout-btn:hover {
+  background: #4f8ef7;
+  color: white;
+  border-color: #4f8ef7;
+}
+
+.home-wrapper h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #ffffff;
+}
+
+.home-welcome {
+  color: #8aafd4;
+  font-size: 15px;
+  margin-bottom: 32px;
+}
+
+.home-wrapper h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #c8d8f0;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.project-card {
+  background: #162032;
+  border: 1px solid #1e3a5f;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.project-card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.project-card button {
+  padding: 8px 0;
+  background: linear-gradient(90deg, #1e5fa8, #4f8ef7);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.project-card button:hover {
+  opacity: 0.9;
+}
+
+/* ─── Project Board Page ─────────────────────── */
+.board-wrapper {
+  padding: 28px;
+}
+
+.board-header {
+  margin-bottom: 24px;
+}
+
+.board-header h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.add-column-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 28px;
+}
+
+.add-column-form input {
+  padding: 9px 14px;
+  background: #162032;
+  border: 1px solid #1e3a5f;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #e8eaf0;
+  outline: none;
+  transition: border 0.2s;
+  width: 200px;
+}
+
+.add-column-form input::placeholder {
+  color: #5a7a9a;
+}
+
+.add-column-form input:focus {
+  border-color: #4f8ef7;
+}
+
+.add-column-form button {
+  padding: 9px 18px;
+  background: linear-gradient(90deg, #1e5fa8, #4f8ef7);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: opacity 0.2s;
+}
+
+.add-column-form button:hover {
+  opacity: 0.9;
+}
+
+.columns-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  overflow-x: auto;
+  padding-bottom: 16px;
+}
+
+/* ─── Column ─────────────────────────────────── */
+.column-card {
+  background-color: #162032;
+  border: 1px solid #1e3a5f;
+  padding: 14px;
+  border-radius: 12px;
+  width: 260px;
+  min-height: 300px;
+  flex-shrink: 0;
+}
+
+.column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.column-header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.column-header h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #c8d8f0;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+.column-drag-handle {
+  cursor: grab;
+  color: #3a5a7a;
+  font-size: 16px;
+  user-select: none;
+  transition: color 0.2s;
+}
+
+.column-drag-handle:hover {
+  color: #4f8ef7;
+}
+
+.column-delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #3a5a7a;
+  font-size: 15px;
+  transition: color 0.2s;
+  padding: 0;
+}
+
+.column-delete-btn:hover {
+  color: #fc8181;
+}
+
+.add-task-btn {
+  margin-top: 10px;
+  width: 100%;
+  background: none;
+  border: 1px dashed #1e3a5f;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 7px;
+  color: #5a7a9a;
+  font-size: 13px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.add-task-btn:hover {
+  background-color: #1a2f4a;
+  color: #e8eaf0;
+}
+
+.add-task-input {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 8px;
+  background: #0f1b2d;
+  border: 1px solid #1e3a5f;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #e8eaf0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.add-task-input::placeholder {
+  color: #5a7a9a;
+}
+
+.add-task-input:focus {
+  border-color: #4f8ef7;
+}
+
+.add-task-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.add-task-actions button:first-child {
+  padding: 6px 14px;
+  background: linear-gradient(90deg, #1e5fa8, #4f8ef7);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.add-task-actions button:last-child {
+  padding: 6px 14px;
+  background: #1a2f4a;
+  color: #8aafd4;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* ─── Task Card ──────────────────────────────── */
+.task-card {
+  background: #0f1b2d;
+  border: 1px solid #1e3a5f;
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #e8eaf0;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.task-card:hover {
+  border-color: #4f8ef7;
+  box-shadow: 0 2px 8px rgba(79, 142, 247, 0.15);
+}
+.login-switch {
+  margin-top: 16px;
+  text-align: center;
+  font-size: 13px;
+  color: #8aafd4;
+}
+
+.login-switch-link {
+  color: #4f8ef7;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.login-switch-link:hover {
+  text-decoration: underline;
+}
+
+.login-success {
+  color: #68d391;
+  font-size: 13px;
+  margin-top: 12px;
+  text-align: center;
+}
+/* ─── Home Top ───────────────────────────────── */
+.home-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 28px;
+}
+
+.create-project-btn {
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #1e5fa8, #4f8ef7);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+
+.create-project-btn:hover {
+  opacity: 0.9;
+}
+
+.project-card-desc {
+  font-size: 13px;
+  color: #8aafd4;
+  line-height: 1.4;
+}
+
+/* ─── Modal ──────────────────────────────────── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.modal-card {
+  background: #162032;
+  border: 1px solid #1e3a5f;
+  border-radius: 14px;
+  padding: 32px;
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.modal-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.modal-input {
+  width: 100%;
+  padding: 10px 14px;
+  background: #0f1b2d;
+  border: 1px solid #1e3a5f;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #e8eaf0;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.modal-input:focus {
+  border-color: #4f8ef7;
+}
+
+.modal-textarea {
+  width: 100%;
+  padding: 10px 14px;
+  background: #0f1b2d;
+  border: 1px solid #1e3a5f;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #e8eaf0;
+  outline: none;
+  resize: vertical;
+  font-family: inherit;
+  transition: border 0.2s;
+}
+
+.modal-textarea::placeholder {
+  color: #5a7a9a;
+}
+
+.modal-textarea:focus {
+  border-color: #4f8ef7;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.modal-confirm-btn {
+  padding: 9px 20px;
+  background: linear-gradient(90deg, #1e5fa8, #4f8ef7);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.modal-confirm-btn:hover {
+  opacity: 0.9;
+}
+
+.modal-cancel-btn {
+  padding: 9px 20px;
+  background: #1a2f4a;
+  color: #8aafd4;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.modal-cancel-btn:hover {
+  background: #1e3a5f;
+}
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.task-title {
+  font-size: 14px;
+  color: #e8eaf0;
+}
+
+.task-chevron {
+  font-size: 10px;
+  color: #5a7a9a;
+  margin-left: 8px;
+}
+
+.task-body {
+  margin-top: 10px;
+  border-top: 1px solid #1e3a5f;
+  padding-top: 10px;
+}
+
+.task-desc-view {
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 4px;
+  transition: background 0.2s;
+}
+
+.task-desc-view:hover {
+  background: #1a2f4a;
+}
+
+.task-desc-text {
+  font-size: 13px;
+  color: #8aafd4;
+  line-height: 1.5;
+}
+
+.task-desc-placeholder {
+  font-size: 13px;
+  color: #3a5a7a;
+  font-style: italic;
+}
+
+.task-desc-input {
+  width: 100%;
+  padding: 8px;
+  background: #0f1b2d;
+  border: 1px solid #1e3a5f;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #e8eaf0;
+  outline: none;
+  resize: vertical;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.task-desc-input:focus {
+  border-color: #4f8ef7;
+}
+
+.task-desc-actions {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.task-save-btn {
+  padding: 5px 12px;
+  background: linear-gradient(90deg, #1e5fa8, #4f8ef7);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.task-cancel-btn {
+  padding: 5px 12px;
+  background: #1a2f4a;
+  color: #8aafd4;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
